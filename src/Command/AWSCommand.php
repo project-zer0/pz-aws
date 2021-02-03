@@ -20,7 +20,8 @@ class AWSCommand extends ProcessCommand
         $this
             ->setName('aws:cli')
             ->setAliases(['aws'])
-            ->setDescription('The  AWS  Command  Line  Interface is a unified tool to manage your AWS services.');
+            ->setDescription('The  AWS  Command  Line  Interface is a unified tool to manage your AWS services.')
+            ->ignoreHelp();
     }
 
     public function getProcess(
